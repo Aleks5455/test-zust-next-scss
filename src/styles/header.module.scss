@@ -1,0 +1,88 @@
+$text-black: #0d1421;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+    background-color: white;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+  }
+  
+  .leftSection {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: $text-black;
+    text-decoration: none;
+  }
+  
+  .navigation {
+    margin-left: 2.5rem;
+  
+    ul {
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+  
+      li {
+        margin-right: 1rem;
+  
+        &:last-child {
+          margin-right: 0;
+        }
+  
+        a {
+          color: $text-black;
+          text-decoration: none;
+          transition: color 0.2s ease;
+  
+          &:hover {
+            color: #1f2937;
+          }
+        }
+      }
+    }
+  }
+  
+  .userSection {
+    display: flex;
+    align-items: center;
+  }
+  
+  .userName {
+    color: $text-black;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 0.5rem;
+  }
+  
+  .userAvatar {
+    width: 2rem;
+    height: 2rem;
+    background-color: #3b82f6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+  }

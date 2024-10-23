@@ -1,0 +1,105 @@
+$dark-blue: #3b75a2;
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.generator_wrapper {
+  width: 600px;
+}
+
+.title {
+  color: #333;
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+}
+
+.form {
+  flex: 1;
+}
+
+.lengthInput {
+  width: 100%;
+  height: 44px;
+  border: #D1D1D1 1px solid;
+  border-radius: 8px;
+  padding: 13px 16px;
+  margin: 5px 0 13px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+
+  label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+.checkbox {
+  accent-color: $dark-blue;
+}
+
+.generateButton {
+  width: 198px;
+  height: 38px;
+  background-color: $dark-blue;
+  color: white;
+  border: none;
+  padding: 7px 13px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+
+  &:hover {
+    background-color: darken($dark-blue, 10%);
+  }
+}
+
+.passwordList {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.passwordItem {
+  height: 31px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 21px;
+  border: rgba(0, 0, 0, 0.13) 1px solid;
+  border-radius: 4px;
+}
+
+.copyButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: $dark-blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
